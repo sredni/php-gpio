@@ -63,6 +63,10 @@ echo "Unexport pin 17\n";
 $gpio->unset($pin);
 ```
 
+TODO
+====
+Tests!!!
+
 Highly inspired by:
 ===================
 * [ronanguilloux/php-gpio](https://github.com/ronanguilloux/php-gpio)
