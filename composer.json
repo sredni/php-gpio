@@ -1,0 +1,25 @@
+{
+  "name": "sredni/php-gpio",
+  "type": "library",
+  "description": "PHP GPIO library",
+  "keywords": ["GPIO", "hardware", "chipset", "input", "output", "port", "pin", "chip", "odroid", "x2", "raspberry", "raspberry pi"],
+  "homepage": "https://github.com/sredni/php-gpio",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Łukasz Średnicki",
+      "email": "lukasz@hps.io"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-0": { "Sredni": "src/" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.x-dev"
+    }
+  }
+}
