@@ -7,6 +7,21 @@ use Sredni\GPIO\Platform\StandardPlatform;
 class OdroidX2 extends StandardPlatform
 {
     protected $pinMap = [
+        1  => '220',
+        2  => '12',
+        3  => '44',
+        4  => '209',
+        5  => '45',
+        6  => '20',
+        7  => '19',
+        8  => '18',
+        9  => '203',
+        10 => '21',
+        11 => '23',
+        13 => '38',
+        14 => '13',
+        15 => '22',
+        16 => '10',
         17 => '112',
         18 => '115',
         19 => '93',

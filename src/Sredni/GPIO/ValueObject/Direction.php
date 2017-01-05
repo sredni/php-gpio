@@ -33,4 +33,12 @@ class Direction
     {
         return $this->direction;
     }
+
+    /**
+     * @return Direction
+     */
+    public function getOpposed() : self
+    {
+        return new self($this->direction === self::IN ? self::OUT : self::IN);
+    }
 }

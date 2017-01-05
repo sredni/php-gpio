@@ -26,8 +26,8 @@ class GPIOService
      */
     public function setup(Pin $pin, Direction $direction)
     {
-        if (!$this->isPinAlreadySet($pin, $direction)) {
-            throw new \Exception('Pin is not exported yet or have wrong direction');
+        if ($this->isPinAlreadySet($pin, $direction->getOpposed())) {
+            throw new \Exception('Pin is already exported and/or have wrong direction');
         }
 
         $this->writeData($this->platform->getExportPath(), $this->platform->getPinTarget($pin));
